@@ -10,8 +10,34 @@ import UIKit
 
 class SaveMyDetailsViewController: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var notesTextField: UITextView!
+    let provider = DataProvider()
+    
+    @IBAction func SaveMyDetails(_ sender: UIButton) {
+        
+        let name = nameTextField.text!
+        let email = emailTextField.text!
+        let notes = notesTextField.text!
+        
+        var data = MyData(name: name, email: email, notes: notes)
+
+        
+        provider.setMyData(data)
+        
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let myData = provider.getMyData()
+        
+        nameTextField.text = myData.name
+        emailTextField.text = myData.email
+        notesTextField.text = myData.notes
+        
 
         // Do any additional setup after loading the view.
     }

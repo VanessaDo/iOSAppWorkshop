@@ -14,6 +14,10 @@
 		64E5D57220B01A49000EC8FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E5D57020B01A49000EC8FB /* LaunchScreen.storyboard */; };
 		64E5D57D20B01A49000EC8FB /* LadyToLadyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5D57C20B01A49000EC8FB /* LadyToLadyTests.swift */; };
 		64E5D58820B01A49000EC8FB /* LadyToLadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5D58720B01A49000EC8FB /* LadyToLadyUITests.swift */; };
+		64E5D59620B01E77000EC8FB /* datatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5D59520B01E77000EC8FB /* datatest.swift */; };
+		64E5D59820B0200D000EC8FB /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5D59720B0200D000EC8FB /* DataProvider.swift */; };
+		64E5D59A20B03556000EC8FB /* SaveMyDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E5D59920B03556000EC8FB /* SaveMyDetails.storyboard */; };
+		64E5D59C20B03AFE000EC8FB /* SaveMyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5D59B20B03AFE000EC8FB /* SaveMyDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		64E5D58320B01A49000EC8FB /* LadyToLadyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LadyToLadyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E5D58720B01A49000EC8FB /* LadyToLadyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadyToLadyUITests.swift; sourceTree = "<group>"; };
 		64E5D58920B01A49000EC8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E5D59520B01E77000EC8FB /* datatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datatest.swift; sourceTree = "<group>"; };
+		64E5D59720B0200D000EC8FB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		64E5D59920B03556000EC8FB /* SaveMyDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SaveMyDetails.storyboard; sourceTree = "<group>"; };
+		64E5D59B20B03AFE000EC8FB /* SaveMyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMyDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,9 @@
 				64E5D56E20B01A49000EC8FB /* Assets.xcassets */,
 				64E5D57020B01A49000EC8FB /* LaunchScreen.storyboard */,
 				64E5D57320B01A49000EC8FB /* Info.plist */,
+				64E5D59720B0200D000EC8FB /* DataProvider.swift */,
+				64E5D59920B03556000EC8FB /* SaveMyDetails.storyboard */,
+				64E5D59B20B03AFE000EC8FB /* SaveMyDetailsViewController.swift */,
 			);
 			path = LadyToLady;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 		64E5D57B20B01A49000EC8FB /* LadyToLadyTests */ = {
 			isa = PBXGroup;
 			children = (
+				64E5D59520B01E77000EC8FB /* datatest.swift */,
 				64E5D57C20B01A49000EC8FB /* LadyToLadyTests.swift */,
 				64E5D57E20B01A49000EC8FB /* Info.plist */,
 			);
@@ -229,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E5D59A20B03556000EC8FB /* SaveMyDetails.storyboard in Resources */,
 				64E5D57220B01A49000EC8FB /* LaunchScreen.storyboard in Resources */,
 				64E5D56F20B01A49000EC8FB /* Assets.xcassets in Resources */,
 				64E5D56D20B01A46000EC8FB /* Main.storyboard in Resources */,
@@ -257,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E5D56A20B01A46000EC8FB /* ViewController.swift in Sources */,
+				64E5D59820B0200D000EC8FB /* DataProvider.swift in Sources */,
+				64E5D59C20B03AFE000EC8FB /* SaveMyDetailsViewController.swift in Sources */,
 				64E5D56820B01A46000EC8FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E5D57D20B01A49000EC8FB /* LadyToLadyTests.swift in Sources */,
+				64E5D59620B01E77000EC8FB /* datatest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

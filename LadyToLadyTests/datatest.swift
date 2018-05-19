@@ -21,12 +21,38 @@ class datatest: XCTestCase {
         super.tearDown()
     }
 
-    func testGetName(){
-        let provider = DataProvider()
-        let name = provider.getName()
-        XCTAssertEqual(name,"Sally")
-    }
+//    func testGetName(){
+//        let provider = DataProvider()
+//        let name = provider.getName()
+//        XCTAssertEqual(name,"Sally")
+//    }
+//    
+//    func testGetEmail(){
+//        let provider = DataProvider()
+//        let email = provider.getEmail()
+//        XCTAssertEqual(email,"sally@mail.com")
+//    }
+//    
+//    func testGetNotes(){
+//        let provider = DataProvider()
+//        let notes = provider.getNotes()
+//        XCTAssertEqual(notes,"Some nice notes about me")
+//        
+//    }
     
+    func testGetMyData(){
+        let provider = DataProvider()
+        let myData = provider.getMyData()
+        let name = myData.name
+        let email = myData.email
+        let notes = myData.notes
+        XCTAssertEqual(name,"Vanessa")
+        XCTAssertEqual(email,"vanessa@mail.com")
+        XCTAssertEqual(notes,"Twitter handle, LinkedIn, interesting facts, anything :)")
+    
+    }
+        
+        
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
